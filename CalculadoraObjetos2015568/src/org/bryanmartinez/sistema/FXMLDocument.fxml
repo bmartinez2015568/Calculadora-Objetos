@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="256.0" style="-fx-background-color: #0091FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bryanmartinez.sistema.FXMLDocumentController">
+   <children>
+      <MenuBar layoutX="14.0" layoutY="14.0" style="-fx-background-color: #FFE4B5;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Tipo">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Cientifica" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Acerca de">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Programador" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="btnMasMenos" layoutX="14.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="+/-" textAlignment="CENTER" />
+      <Button fx:id="btnCero" layoutX="75.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #A5A5A5;" text="0" />
+      <Button fx:id="btnCinco" layoutX="75.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="5" />
+      <Button fx:id="btnCuatro" layoutX="131.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="4" />
+      <Button fx:id="btnDos" layoutX="75.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="2" />
+      <Button fx:id="btnSiete" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="7" />
+      <Button fx:id="btnOcho" layoutX="75.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="8" />
+      <Button fx:id="btnTres" layoutX="131.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="3" />
+      <Button fx:id="btnSeis" layoutX="14.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="6" />
+      <Button fx:id="btnUno" layoutX="14.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="1">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow color="#fffefe00" />
+         </effect>
+      </Button>
+      <Button fx:id="btnNueve" layoutX="131.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: A5A5A5;" text="9" />
+      <Button fx:id="btnPunto" layoutX="131.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text=".">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIgual" layoutX="189.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="106.0" prefWidth="50.0" style="-fx-background-color: #FFA200;" text="=" />
+      <Button fx:id="btnMas" layoutX="189.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFE600;" text="+">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDividir" layoutX="189.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #FFE600;" text="/" />
+      <Button fx:id="btnMenos" layoutX="189.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFE600;" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMultiplicar" layoutX="189.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFE600;" text="x" />
+      <Button fx:id="btnUnoDivididoX" layoutX="131.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="1/X" />
+      <Button fx:id="btnC" layoutX="75.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="C" />
+      <Button fx:id="btnCe" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="CE" />
+      <Button fx:id="btnPorcentaje" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="\%">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCuadrado" layoutX="75.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="x²" />
+      <Button fx:id="btnRaiz" layoutX="131.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #5264BD;" text="√" />
+      <TextField fx:id="txtResultado" alignment="CENTER_RIGHT" disable="true" layoutX="16.0" layoutY="54.0" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>

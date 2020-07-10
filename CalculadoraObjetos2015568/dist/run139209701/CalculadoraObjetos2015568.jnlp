@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CalculadoraObjetos2015568.jnlp">
+  <information>
+    <title>CalculadoraObjetos2015568</title>
+    <vendor>kenne</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CalculadoraObjetos2015568.jar" size="5422" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CalculadoraObjetos2015568" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="org.bryanmartinez.sistema.Principal"  name="CalculadoraObjetos2015568" />
+  <update check="always"/>
+</jnlp>
